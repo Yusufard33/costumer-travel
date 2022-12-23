@@ -16,7 +16,7 @@ booked = st.number_input('Booking')
 
 travel_diagnosis = ''
 
-if st.button('Prediksi Analisis Pelanggan Perjalanan'):
+if st.button('Prediksi Pelanggan Perjalanan'):
 	prediksi = model.predict([[age, flayer, AnnualIncome,  service, mediasocial, booked]])
 	if(prediksi[0] == 1):
 		travel_diagnosis = 'target Tercapai'
